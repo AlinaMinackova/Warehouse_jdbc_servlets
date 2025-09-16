@@ -4,12 +4,12 @@
 <html lang="ru">
 <head>
     <%-- Подключаем общий header --%>
-    <jsp:include page="/fragments/header.jsp"/>
+    <jsp:include page="../fragments/header.jsp"/>
 </head>
 <body class="d-flex flex-column min-vh-100">
 
 <!-- 🔹 Навбар -->
-<jsp:include page="/fragments/navbar.jsp"/>
+<jsp:include page="../fragments/navbar.jsp"/>
 
 <div class="container flex-grow-1 mt-4">
     <h2 class="text-center mb-4">ДОБАВИТЬ СКЛАД</h2>
@@ -48,7 +48,7 @@
 
 <!-- 🔹 Футер -->
 <footer class="mt-auto">
-    <jsp:include page="/fragments/footer.jsp"/>
+    <jsp:include page="../fragments/footer.jsp"/>
 </footer>
 
 </body>
