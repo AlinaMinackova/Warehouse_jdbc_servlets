@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <listener>
+        <listener-class>org.example.AppContextListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>org.example.controller.UserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/users</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CategoryFindAllServlet</servlet-name>
+        <servlet-class>org.example.controller.category.CategoryFindAllServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CategoryFindAllServlet</servlet-name>
+        <url-pattern>/category/findAll</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CategoryAddServlet</servlet-name>
+        <servlet-class>org.example.controller.category.CategoryAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CategoryAddServlet</servlet-name>
+        <url-pattern>/category/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CategoryEditServlet</servlet-name>
+        <servlet-class>org.example.controller.category.CategoryEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CategoryEditServlet</servlet-name>
+        <url-pattern>/category/edit/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CategoryDeleteServlet</servlet-name>
+        <servlet-class>org.example.controller.category.CategoryDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CategoryDeleteServlet</servlet-name>
+        <url-pattern>/category/delete/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManufacturerFindAllServlet</servlet-name>
+        <servlet-class>org.example.controller.manufacturer.ManufacturerFindAllServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ManufacturerFindAllServlet</servlet-name>
+        <url-pattern>/manufacturer/findAll</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManufacturerAddServlet</servlet-name>
+        <servlet-class>org.example.controller.manufacturer.ManufacturerAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ManufacturerAddServlet</servlet-name>
+        <url-pattern>/manufacturer/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManufacturerEditServlet</servlet-name>
+        <servlet-class>org.example.controller.manufacturer.ManufacturerEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ManufacturerEditServlet</servlet-name>
+        <url-pattern>/manufacturer/edit/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManufacturerDeleteServlet</servlet-name>
+        <servlet-class>org.example.controller.manufacturer.ManufacturerDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ManufacturerDeleteServlet</servlet-name>
+        <url-pattern>/manufacturer/delete/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StorekeeperFindAllServlet</servlet-name>
+        <servlet-class>org.example.controller.storekeeper.StorekeeperFindAllServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StorekeeperFindAllServlet</servlet-name>
+        <url-pattern>/storekeeper/findAll</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StorekeeperAddServlet</servlet-name>
+        <servlet-class>org.example.controller.storekeeper.StorekeeperAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StorekeeperAddServlet</servlet-name>
+        <url-pattern>/storekeeper/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StorekeeperEditServlet</servlet-name>
+        <servlet-class>org.example.controller.storekeeper.StorekeeperEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StorekeeperEditServlet</servlet-name>
+        <url-pattern>/storekeeper/edit/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StorekeeperDeleteServlet</servlet-name>
+        <servlet-class>org.example.controller.storekeeper.StorekeeperDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StorekeeperDeleteServlet</servlet-name>
+        <url-pattern>/storekeeper/delete/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WarehouseFindAllServlet</servlet-name>
+        <servlet-class>org.example.controller.warehouse.WarehouseFindAllServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WarehouseFindAllServlet</servlet-name>
+        <url-pattern>/warehouse/findAll</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WarehouseAddServlet</servlet-name>
+        <servlet-class>org.example.controller.warehouse.WarehouseAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WarehouseAddServlet</servlet-name>
+        <url-pattern>/warehouse/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WarehouseEditServlet</servlet-name>
+        <servlet-class>org.example.controller.warehouse.WarehouseEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WarehouseEditServlet</servlet-name>
+        <url-pattern>/warehouse/edit/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WarehouseDeleteServlet</servlet-name>
+        <servlet-class>org.example.controller.warehouse.WarehouseDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WarehouseDeleteServlet</servlet-name>
+        <url-pattern>/warehouse/delete/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductFindAllServlet</servlet-name>
+        <servlet-class>org.example.controller.product.ProductFindAllServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProductFindAllServlet</servlet-name>
+        <url-pattern>/product/findAll</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductAddServlet</servlet-name>
+        <servlet-class>org.example.controller.product.ProductAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProductAddServlet</servlet-name>
+        <url-pattern>/product/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductEditServlet</servlet-name>
+        <servlet-class>org.example.controller.product.ProductEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProductEditServlet</servlet-name>
+        <url-pattern>/product/edit/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductDeleteServlet</servlet-name>
+        <servlet-class>org.example.controller.product.ProductDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProductDeleteServlet</servlet-name>
+        <url-pattern>/product/delete/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StockFindAllServlet</servlet-name>
+        <servlet-class>org.example.controller.stock.StockFindAllServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StockFindAllServlet</servlet-name>
+        <url-pattern>/stock/findAll</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StockAddServlet</servlet-name>
+        <servlet-class>org.example.controller.stock.StockAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StockAddServlet</servlet-name>
+        <url-pattern>/stock/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StockEditServlet</servlet-name>
+        <servlet-class>org.example.controller.stock.StockEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StockEditServlet</servlet-name>
+        <url-pattern>/stock/edit/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StockDeleteServlet</servlet-name>
+        <servlet-class>org.example.controller.stock.StockDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StockDeleteServlet</servlet-name>
+        <url-pattern>/stock/delete/*</url-pattern>
+    </servlet-mapping>
+
+</web-app>
