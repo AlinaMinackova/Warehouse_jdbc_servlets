@@ -11,7 +11,7 @@ package org.apache.jsp;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.jsp.*;
-import org.example.entity.User;
+
 import java.util.List;
 
 public final class users_jsp extends org.apache.jasper.runtime.HttpJspBase

@@ -31,10 +31,6 @@ public class AppContextListener implements ServletContextListener {
         dataSource = DataSourceConfig.createDataSource();
 
         // Создаём DAO и сервис
-        UserDao userDao = new UserDao(dataSource);
-        UserService userService = new UserService(userDao);
-
-        // Создаём DAO и сервис
         CategoryDao categoryDao = new CategoryDao(dataSource);
         CategoryService categoryService = new CategoryService(categoryDao);
 
@@ -61,7 +57,6 @@ public class AppContextListener implements ServletContextListener {
         // Сохраняем в ServletContext
         ServletContext context = sce.getServletContext();
         context.setAttribute("dataSource", dataSource);
-        context.setAttribute("userService", userService);
         context.setAttribute("categoryService", categoryService);
         context.setAttribute("manufacturerService", manufacturerService);
         context.setAttribute("storekeeperService", storekeeperService);

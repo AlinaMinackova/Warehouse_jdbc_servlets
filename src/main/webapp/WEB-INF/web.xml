@@ -10,16 +10,6 @@
     </listener>
 
     <servlet>
-        <servlet-name>UserServlet</servlet-name>
-        <servlet-class>org.example.controller.UserServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>UserServlet</servlet-name>
-        <url-pattern>/users</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>CategoryFindAllServlet</servlet-name>
         <servlet-class>org.example.controller.category.CategoryFindAllServlet</servlet-class>
     </servlet>
